@@ -15,12 +15,12 @@ DTBIMAGE="dtb"
 DEFCONFIG="yarpiin_defconfig"
 KERNEL_DIR="/home/slawek/Android/Yarpiin-Kernel-OP2-OxygenOs"
 RESOURCE_DIR="$KERNEL_DIR/.."
-ANYKERNEL_DIR="/home/slawek/Android/Kernelzip/YARPIIN.OP2.OXY.TEST"
+ANYKERNEL_DIR="/home/slawek/Android/Kernelzip/YARPIIN.OP2.OXY.test"
 TOOLCHAIN_DIR="/home/slawek/Android/Toolchains/"
 
 # Kernel Details
 BASE_YARPIIN_VER="YARPIIN.OP2.OXY"
-VER=".006"
+VER=".007"
 YARPIIN_VER="$BASE_YARPIIN_VER$VER"
 
 # Vars
