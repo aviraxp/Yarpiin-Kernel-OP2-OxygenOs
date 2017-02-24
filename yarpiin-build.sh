@@ -13,14 +13,14 @@ THREAD="-j$(grep -c ^processor /proc/cpuinfo)"
 KERNEL="Image.gz-dtb"
 DTBIMAGE="dtb"
 DEFCONFIG="yarpiin_defconfig"
-KERNEL_DIR="/home/slawek/Android/Yarpiin-Kernel-OP2-OxygenOs"
+KERNEL_DIR="/home/slawek/Android/OP2/Yarpiin-Kernel-OP2-OxygenOs"
 RESOURCE_DIR="$KERNEL_DIR/.."
-ANYKERNEL_DIR="/home/slawek/Android/Kernelzip/YARPIIN.OP2.OXY.test"
-TOOLCHAIN_DIR="/home/slawek/Android/Toolchains/"
+LAZYFLASHER_DIR="/home/slawek/Android/OP2/lazyflasherOP2OXY"
+TOOLCHAIN_DIR="/home/slawek/Android/Toolchains"
 
 # Kernel Details
 BASE_YARPIIN_VER="YARPIIN.OP2.OXY"
-VER=".007"
+VER=".008"
 YARPIIN_VER="$BASE_YARPIIN_VER$VER"
 
 # Vars
@@ -32,10 +32,10 @@ export KBUILD_BUILD_USER=yarpiin
 export KBUILD_BUILD_HOST=kernel
 
 # Paths
-REPACK_DIR="$ANYKERNEL_DIR"
-PATCH_DIR="$ANYKERNEL_DIR/patch"
-MODULES_DIR="$ANYKERNEL_DIR/modules"
-ZIP_MOVE="/home/slawek/Android/Kernelzip"
+REPACK_DIR="$LAZYFLASHER_DIR"
+PATCH_DIR="$LAZYFLASHER_DIR/ramdisk-patch"
+MODULES_DIR="$LAZYFLASHER_DIR/modules"
+ZIP_MOVE="/home/slawek/Android/OP2/zip"
 ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 
 # Functions
