@@ -20,7 +20,7 @@ TOOLCHAIN_DIR="/home/slawek/Android/Toolchains"
 
 # Kernel Details
 BASE_YARPIIN_VER="YARPIIN.OP2.OXY"
-VER=".008"
+VER=".009"
 YARPIIN_VER="$BASE_YARPIIN_VER$VER"
 
 # Vars
